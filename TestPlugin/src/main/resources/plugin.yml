@@ -1,0 +1,9 @@
+name: TestPlugin
+main: io.github.nicks.TestPlugin
+author: Nick
+
+version: 1.0
+api-version: 1.13
+
+commands:
+  test:

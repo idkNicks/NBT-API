@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group = 'io.github.nicks'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven { url = "https://repo.starly.kr/repository/maven-public/" }
+}
+
+dependencies {
+    compileOnly "org.jetbrains:annotations:23.0.0"
+    compileOnly "org.projectlombok:lombok:1.18.26"
+    annotationProcessor "org.projectlombok:lombok:1.18.26"
+
+    implementation "com.google.code.gson:gson:2.10.1"
+
+    compileOnly "org.spigotmc:spigot-api:R0.1:1.12.2"
+    compileOnly "io.github.nicks:NBT-API:1.0"
+}

@@ -1,0 +1,6 @@
+name: NBT-API
+main: io.github.nicks.NBTApi
+author: Nick
+
+version: 1.0
+api-version: 1.13
