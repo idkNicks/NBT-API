@@ -22,3 +22,25 @@ dependencies {
 
     compileOnly "org.spigotmc:spigot-api:R0.1:1.12.2"
 }
+
+shadowJar {
+    archiveFileName = "NBT-API.jar"
+    destinationDirectory = file("File Location") // TODO EDIT
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = "io.github.nicks"
+            artifactId = "NBT-API"
+            version = "${project.version}"
+
+            from components.java
+        }
+    }
+    repositories {
+        mavenLocal()
+    }
+}
+
+build.dependsOn publishToMavenLocal
